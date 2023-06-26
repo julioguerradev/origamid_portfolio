@@ -1,0 +1,91 @@
+#experiencia {
+    width: calc(100% - 40px);
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+}
+
+#experiencia-titulo h2 {
+    color: var(--c-3);
+    font-size: 130px;
+    font-family: Fira Sans;
+    font-weight: 700;
+    line-height: 144px;
+    text-transform: uppercase;
+    word-break: break-all;
+}
+
+#experiencia-intro {
+    max-width: 500px;
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+
+#experiencia-intro p {
+    color: var(--c-10);
+    font-size: 24px;
+    font-family: Fira Sans;
+    line-height: 32px;
+}
+
+#experiencia-intro p span {
+    font-weight: bold;
+}
+
+#experiencia-cards {
+    display: grid;
+    gap: 20px;
+}
+
+.card {
+    border-radius: 5px;
+    border: 1px solid var(--c-2);
+    background: var(--c-1);
+    padding: 20px 20px 30px 20px;
+
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card::before {
+    content: '';
+    display: block;
+    height: 20px;
+    width: 4px;
+    background: linear-gradient(180deg, #B6F829 0%, #67DD0A 100%);
+    position: absolute;
+    top: 20px;
+    left: -4px;
+}
+
+.card-titulo p {
+    margin-bottom: 10px;
+
+    color: var(--c-13);
+    font-size: 18px;
+    font-family: Fira Sans;
+    font-weight: 700; 
+}
+
+.card-texto p {
+    color: var(--c-10, #525252);
+    font-size: 14px;
+    font-family: Fira Sans;
+    line-height: 20px;
+}
+
+.card-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.badge {
+    background-color: #fff;
+    padding: 7px 14px;
+    border-radius: 5px;
+}

@@ -1,0 +1,48 @@
+#content-bg {
+    width: calc(100% - 40px);
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: 120px;
+}
+
+#content-container {
+    display: grid;
+    grid-template-columns: 1fr  2fr;
+    gap: 100px;
+}
+
+#texto-principal {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+#texto-principal h1{
+    color: var(--c-13);
+    font-size: 72px;
+    font-family: Fira Sans;
+    font-weight: 700;
+    line-height: 80px;
+    z-index: 9;
+    position: relative;
+}
+
+#texto-principal h1::before {
+    content: '';
+    display: block;
+    width: 140px;
+    height: 100px;
+    background: url('../../img/detalhe.svg') no-repeat center;
+    position: absolute;
+    top: -15px;
+    left: -40px;
+    z-index: -1;
+}
+
+#texto-principal p {
+    color: var(--c-10);
+    font-size: 24px;
+    font-family: Fira Sans;
+}
